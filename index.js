@@ -1,2 +1,4 @@
 console.log("Hello World")
-const add = () => 5+6
+var a = 15,b=10;
+const add = () => `The sum is ${a+b}`
+console.log(add())
