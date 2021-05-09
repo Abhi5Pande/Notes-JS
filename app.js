@@ -52,7 +52,7 @@ function showNotes()
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title"> ${index/2 + 1}) ${notesObj[index]}</h5>
-                <p class="card-text">${notesObj[index+1]}</p>
+                <p class="card-text" style="min-height:30px;max-height:30px;overflow:hidden;" >${notesObj[index+1]}</p>
                 <div class="row view">
                     <a href="#" class="btn btn-primary col-sm-4 mx-2" id="${index}" onclick="deleteNote(this.id)"> Delete </a>
                     <a href="#" class="btn btn-primary col-sm-3 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="editModal(this.id)" id="${index+1}"> Edit </a>
